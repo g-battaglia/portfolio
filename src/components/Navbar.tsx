@@ -1,56 +1,79 @@
+import styled from "styled-components";
+import { useState } from "react";
+
+const Nav = styled.nav`
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-menu {
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+  }
+  .show {
+    text-align: center;
+    display: flex;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #f7f7f7;
+    border-top: 1px solid #f7f7f7;
+    padding: 2rem;
+  }
+  .button {
+    position: absolute;
+    right: 1rem;
+  }
+  @media screen and (max-width: 1024px) {
+    .button {
+      position: static;
+      margin-top: 2rem;
+    }
+  }
+`;
+
 const Navbar = () => {
+  const [showOverlay, setShowOverlay] = useState(false);
   return (
     <>
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <Nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bt-dev.xyz">
-            <h1>BT-Dev</h1>
+            <h4 className="title is-4">BT-Dev</h4>
           </a>
 
-          <a
-            role="button"
+          <button
             className="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
+            onClick={() => setShowOverlay((prev) => !prev)}
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </button>
         </div>
 
-        <div id="navbarBasicExample" className="navbar-menu">
+        <div
+          id="navbarBasicExample"
+          className={showOverlay ? "show navbar-menu" : "navbar-menu"}
+        >
           <div className="navbar-start">
             <a className="navbar-item">Home</a>
 
             <a className="navbar-item">Documentation</a>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">More</a>
-
-              <div className="navbar-dropdown">
-                <a className="navbar-item">About</a>
-                <a className="navbar-item">Jobs</a>
-                <a className="navbar-item">Contact</a>
-                <hr className="navbar-divider" />
-                <a className="navbar-item">Report an issue</a>
-              </div>
-            </div>
+            <button className="button is-primary">
+              <strong>Cotact Me</strong>
+            </button>
           </div>
 
           <div className="navbar-end">
             <div className="navbar-item">
-              <div className="buttons">
-                <a className="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a className="button is-light">Log in</a>
-              </div>
+              <div className="buttons"></div>
             </div>
           </div>
         </div>
-      </nav>
+      </Nav>
     </>
   );
 };
