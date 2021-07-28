@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useState } from "react";
 
 const Nav = styled.nav`
+  padding: 0 2rem;
   .navbar-brand {
     display: flex;
     align-items: center;
