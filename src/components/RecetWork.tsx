@@ -1,37 +1,55 @@
 import styled from "styled-components";
+import { Card, Grid } from ".";
 
 const Section = styled.section`
-  margin-top: 4rem;
-  .grid {
-    display: grid;
+  padding-top: 4rem;
+  .title,
+  .subtitle {
+    color: #ffff;
   }
-  .card {
-    width: 400px;
+  &::before {
+    content: "";
+    background-color: #00d1b2;
+    height: 75vh;
+    width: 100%;
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    border-radius: 16px;
+  }
+  .section-title {
+    position: relative;
+    margin-bottom: 4rem;
+  }
+  @media screen and (max-width: 1024px) {
+    background-color: #00d1b2;
+    position: relative;
+    width: 100vw;
+    left: -2rem;
+    padding: 4rem 2rem 4rem 2rem;
+    &::before {
+      display: none;
+    }
   }
 `;
 
 const RecetWork = () => {
   return (
-    <Section className="container">
+    <Section id="recent">
       <div className="section-title">
         <h2 className="title is-2 has-text-centered">My Recent Work</h2>
         <h5 className="subtitle is-5 has-text-centered">
-          Here are a few design projects I've worked on recently. Want to see
-          more? Email me.
+          Here are a few design projects I've worked on recently.
         </h5>
       </div>
-      <div className="grid">
-        <div className="card">
-          <div className="card-image">
-            <div className="image is-4by3">
-              <img
-                src="https://bulma.io/images/placeholders/1280x960.png"
-                alt="Placeholder image"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Grid>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </Grid>
     </Section>
   );
 };

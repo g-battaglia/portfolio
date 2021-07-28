@@ -3,6 +3,14 @@ import { useState } from "react";
 
 const Nav = styled.nav`
   padding: 0 2rem;
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0 0.5px 4px 0 #e4e4e4;
+
+  .title {
+    color: #00d1b2;
+    font-family: "Kaushan Script";
+  }
   .navbar-brand {
     display: flex;
     align-items: center;
@@ -12,22 +20,23 @@ const Nav = styled.nav`
     justify-content: center;
     box-shadow: none;
   }
-  .show {
-    text-align: center;
-    display: flex;
-    font-size: 1.5rem;
-    border-bottom: 1px solid #f7f7f7;
-    border-top: 1px solid #f7f7f7;
-    padding: 2rem;
-  }
+
   .button {
     position: absolute;
-    right: 1rem;
+    right: 2rem;
   }
   @media screen and (max-width: 1024px) {
     .button {
       position: static;
-      margin-top: 2rem;
+      margin-top: 1rem;
+    }
+    .show {
+      text-align: center;
+      display: flex;
+      font-size: 1.5rem;
+      border-bottom: 1px solid #f7f7f7;
+      border-top: 1px solid #f7f7f7;
+      padding: 2rem;
     }
   }
 `;
@@ -38,8 +47,8 @@ const Navbar = () => {
     <>
       <Nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <a className="navbar-item" href="https://bt-dev.xyz">
-            <h4 className="title is-4">BT-Dev</h4>
+          <a className="navbar-item" href="#hero">
+            <h3 className="title is-3 is-primary">BT-Dev</h3>
           </a>
 
           <button
@@ -56,13 +65,24 @@ const Navbar = () => {
         </div>
 
         <div
-          id="navbarBasicExample"
+          id="navbarNav"
           className={showOverlay ? "show navbar-menu" : "navbar-menu"}
         >
           <div className="navbar-start">
-            <a className="navbar-item">Home</a>
-
-            <a className="navbar-item">Documentation</a>
+            <a
+              href="#recent"
+              onClick={() => setShowOverlay((prev) => !prev)}
+              className="navbar-item"
+            >
+              Recent Works
+            </a>
+            <a
+              href="#bio"
+              onClick={() => setShowOverlay((prev) => !prev)}
+              className="navbar-item"
+            >
+              Biography
+            </a>
             <button className="button is-primary">
               <strong>Cotact Me</strong>
             </button>

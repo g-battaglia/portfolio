@@ -4,8 +4,9 @@ const Section = styled.section`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
   .heroTitle {
-    margin-top: 6rem;
+    margin-top: 8rem;
     margin-bottom: 4rem;
     max-width: 50rem;
     .title {
@@ -31,7 +32,7 @@ const Section = styled.section`
 
 const Hero = () => {
   return (
-    <Section>
+    <Section id="hero">
       <div className="heroTitle">
         <h2 className="title is-2 has-text-centered">Giacomo Battaglia</h2>
         <h5 className="subtitle is-5 has-text-centered">

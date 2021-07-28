@@ -1,5 +1,6 @@
-import { Navbar, Hero, RecetWork } from "./components";
+import { Navbar, Hero, RecetWork, Footer, Biography } from "./components";
 import "bulma/css/bulma.min.css";
+import "./App.css";
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       >
         <Hero />
         <RecetWork />
+        <Biography />
       </main>
+      <Footer />
     </>
   );
 }
