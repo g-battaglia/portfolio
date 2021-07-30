@@ -8,7 +8,7 @@ const Section = styled.section`
   .heroTitle {
     margin-top: 8rem;
     margin-bottom: 4rem;
-    max-width: 50rem;
+    max-width: 40rem;
     .title {
       margin-bottom: 2rem;
     }
@@ -36,8 +36,8 @@ const Hero = () => {
       <div className="heroTitle">
         <h2 className="title is-2 has-text-centered">Giacomo Battaglia</h2>
         <h5 className="subtitle is-5 has-text-centered">
-          Highly motivated, self-taught developer seeking to launch a career
-          building web applications and services.
+          Sviluppatore principalmente self-taught altamente motivato in cerca di
+          occupazione nella realizzazione di applicazioni e servizi web.
         </h5>
       </div>
 

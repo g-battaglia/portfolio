@@ -70,22 +70,33 @@ const Navbar = () => {
         >
           <div className="navbar-start">
             <a
-              href="#recent"
+              href="#skills"
               onClick={() => setShowOverlay((prev) => !prev)}
               className="navbar-item"
             >
-              Recent Works
+              Skills
             </a>
+
             <a
               href="#bio"
               onClick={() => setShowOverlay((prev) => !prev)}
               className="navbar-item"
             >
-              Biography
+              Biografia
             </a>
-            <button className="button is-primary">
-              <strong>Cotact Me</strong>
-            </button>
+            <a
+              href="#recent"
+              onClick={() => setShowOverlay((prev) => !prev)}
+              className="navbar-item"
+            >
+              Lavori Recenti
+            </a>
+            <a
+              className="button is-primary"
+              href="mailto:battaglia.giacomo@icloud.com"
+            >
+              <strong>Contattami</strong>
+            </a>
           </div>
 
           <div className="navbar-end">

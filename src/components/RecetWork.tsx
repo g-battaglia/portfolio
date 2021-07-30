@@ -3,6 +3,8 @@ import { Card, Grid } from ".";
 
 const Section = styled.section`
   padding-top: 4rem;
+  margin-bottom: 4rem;
+
   .title,
   .subtitle {
     color: #ffff;
@@ -10,26 +12,23 @@ const Section = styled.section`
   &::before {
     content: "";
     background-color: #00d1b2;
-    height: 75vh;
+    height: 300px;
     width: 100%;
     position: absolute;
+    left: 0;
     margin-top: -2rem;
-    margin-left: -2rem;
     border-radius: 16px;
+
+    @media screen and (max-width: 1024px) {
+      border-radius: 0;
+      height: 10%;
+    }
   }
   .section-title {
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
   @media screen and (max-width: 1024px) {
-    background-color: #00d1b2;
-    position: relative;
-    width: 100vw;
-    left: -2rem;
-    padding: 4rem 2rem 4rem 2rem;
-    &::before {
-      display: none;
-    }
   }
 `;
 
@@ -37,18 +36,21 @@ const RecetWork = () => {
   return (
     <Section id="recent">
       <div className="section-title">
-        <h2 className="title is-2 has-text-centered">My Recent Work</h2>
+        <h2 className="title is-2 has-text-centered">Lavori Recenti</h2>
         <h5 className="subtitle is-5 has-text-centered">
-          Here are a few design projects I've worked on recently.
+          Ecco alcuni progetti su cui ho lavorato recentemente
         </h5>
       </div>
       <Grid>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card sizeClass="is-5by3" url={process.env.PUBLIC_URL + "/ad.jpg"} />
+        <Card
+          sizeClass="is-5by3"
+          url={process.env.PUBLIC_URL + "/wisepress.jpg"}
+        />
+        <Card
+          sizeClass="is-5by3"
+          url={process.env.PUBLIC_URL + "/kerykeion.jpg"}
+        />
       </Grid>
     </Section>
   );

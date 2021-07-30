@@ -1,4 +1,12 @@
-import { Navbar, Hero, RecetWork, Footer, Biography } from "./components";
+import {
+  Navbar,
+  Hero,
+  RecetWork,
+  Skils,
+  Footer,
+  Certicates,
+  Cookies,
+} from "./components";
 import "bulma/css/bulma.min.css";
 import "./App.css";
 
@@ -11,10 +19,12 @@ function App() {
         style={{ padding: "0 2rem" }}
       >
         <Hero />
+        <Skils />
         <RecetWork />
-        <Biography />
+        <Certicates />
       </main>
       <Footer />
+      <Cookies />
     </>
   );
 }
