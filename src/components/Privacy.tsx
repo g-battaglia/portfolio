@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Div = styled.div`
   position: fixed;
@@ -8,12 +9,14 @@ const Div = styled.div`
   width: 100%;
   background-color: #0000007a;
   z-index: 100000;
+
   .close {
     position: fixed;
     left: 0;
     top: 0;
     font-size: 1.5rem;
     border-radius: 8px;
+    color: black;
   }
   .inner {
     border-radius: 8px;
@@ -46,10 +49,9 @@ const Privacy: React.FC<Props> = ({ privacy, setPrivacy }) => {
   return (
     <Div className={privacy ? "" : "hide"} onClick={clickHandler}>
       <div className="inner">
-        <i
-          onClick={clickHandler}
-          className="close button is-white fas fa-times"
-        ></i>
+        <button className="button is-white close">
+          <FontAwesomeIcon onClick={clickHandler} icon="times" />
+        </button>
         <div id="ca_info_plus">
           <p>
             <strong>INFORMATIVA PRIVACY</strong>

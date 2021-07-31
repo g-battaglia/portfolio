@@ -6,6 +6,7 @@ import {
   faDesktop,
   faPencilRuler,
   faServer,
+  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -35,7 +36,8 @@ library.add(
   faLinkedin,
   faDesktop,
   faPencilRuler,
-  faServer
+  faServer,
+  faTimes
 );
 
 function App() {
