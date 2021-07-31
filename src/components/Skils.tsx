@@ -8,7 +8,7 @@ const Section = styled.section`
   .bioTitle {
     position: relative;
 
-    margin: 6rem 0;
+    margin: 4rem 0;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,13 @@ const Section = styled.section`
   }
 
   .title-description {
-    height: 6rem;
+    height: 8rem;
+    @media screen and (max-width: 1024px) {
+      height: 9rem;
+    }
+    @media screen and (max-width: 768px) {
+      height: 5rem;
+    }
   }
   .columns {
     font-size: 1.1rem;
@@ -72,14 +78,11 @@ const Skils = () => {
   return (
     <Section className="section skills has-text-centered" id="skills">
       <div className="bioTitle">
-        <h2 className="title is-2 has-text-centered">Skills</h2>
+        <h2 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered">
+          Skills
+        </h2>
         <h5 className="subtitle is-5 has-text-centered">
-          Since beginning my journey as a freelance designer nearly 10 years
-          ago, I've done remote work for agencies, consulted for startups, and
-          collaborated with talented people to create digital products for both
-          business and consumer use. I'm quietly confident, naturally curious,
-          and perpetually working on improving my chops one design problem at a
-          time.
+          L'elenco in breve delle mie competenze
         </h5>
       </div>
       <div className="container is-narrow">
@@ -87,80 +90,76 @@ const Skils = () => {
           <div className="content">
             <div className="columns is-centered">
               <div className="column first">
-                <i className="fas fa-desktop has-text-primary"></i>
-                <h1 className="title is-size-4 is-spaced">Front-end</h1>
-                <p className="title-description">
-                  I like to code things from scratch, and enjoy bringing ideas
-                  to life in the browser.
-                </p>
-                <p className="list-title has-text-primary has-text-weight-normal">
-                  Languages I speak:
-                </p>
-                <p>HTML, Pug, Slim, CSS, Sass, Less</p>
-                <p className="list-title has-text-primary has-text-weight-normal">
-                  Dev Tools:
-                </p>
-                <ul>
-                  <li>Atom</li>
-                  <li>Bitbucket</li>
-                  <li>Bootstrap</li>
-                  <li>Bulma</li>
-                  <li>Codekit</li>
-                  <li>Codepen</li>
-                  <li>Github</li>
-                  <li>Gitlab</li>
-                  <li>Terminal</li>
-                </ul>
-              </div>
-              <div className="column">
                 <i className="fas fa-server has-text-primary"></i>
                 <h1 className="title is-size-4 is-spaced">Back-end</h1>
                 <p className="title-description">
-                  I like to code things from scratch, and enjoy bringing ideas
-                  to life in the browser.
+                  Nel backend do il mio meglio per realizzare strutture solide
+                  da collegare al frontend.
                 </p>
                 <p className="list-title has-text-primary has-text-weight-normal">
-                  Languages I speak:
+                  Linguaggi:
                 </p>
-                <p>HTML, Pug, Slim, CSS, Sass, Less</p>
+                <p>Python, PHP, Javascript, SQL, Bash</p>
                 <p className="list-title has-text-primary has-text-weight-normal">
-                  Dev Tools:
+                  Framework e tecnologie
                 </p>
                 <ul>
-                  <li>Atom</li>
-                  <li>Bitbucket</li>
+                  <li>Django</li>
+                  <li>Django Rest Framework</li>
+                  <li>FastAPI</li>
+                  <li>Flask</li>
+                  <li>Node.js</li>
+                  <li>Bash/Zsh scripting</li>
+                  <li>Linux</li>
+                  <li>Aws</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+              <div className="column ">
+                <i className="fas fa-desktop has-text-primary"></i>
+                <h1 className="title is-size-4 is-spaced">Front-end</h1>
+                <p className="title-description">
+                  Il frontend è la mia specialità. La tecnologia che padroneggio
+                  meglio è <b>React</b> ma scelgo le tecnologie più adatte in
+                  base al singolo progetto.
+                </p>
+                <p className="list-title has-text-primary has-text-weight-normal">
+                  Linguaggi:
+                </p>
+                <p>Javascript, PHP, SASS, HTML, CSS</p>
+                <p className="list-title has-text-primary has-text-weight-normal">
+                  Frakework e tecnlogie:
+                </p>
+                <ul>
+                  <li>React</li>
+                  <li>React Ecosystem</li>
+                  <li>Material UI</li>
+                  <li>Javascript ES Next</li>
+                  <li>Wordpress (temi personalizzati)</li>
                   <li>Bootstrap</li>
                   <li>Bulma</li>
-                  <li>Codekit</li>
+                  <li>Tailwind</li>
                   <li>Codepen</li>
-                  <li>Github</li>
-                  <li>Gitlab</li>
-                  <li>Terminal</li>
                 </ul>
               </div>
               <div className="column">
                 <i className="fas fa-pencil-ruler has-text-primary"></i>
-                <h1 className="title is-size-4 is-spaced">Designer</h1>
+                <h1 className="title is-size-4 is-spaced">Design</h1>
                 <p className="title-description">
-                  I value simple content structure, clean design patterns, and
-                  thoughtful interactions.
+                  Realizzo anche design semplici e puliti che aiutino l'utente
+                  ad interagire con il sito.
                 </p>
                 <p className="list-title has-text-primary has-text-weight-normal">
-                  Things I enjoy designing:
+                  Tipi di design che so realizzare:
                 </p>
-                <p>UX, UI, Web, Mobile, Apps, Logos</p>
+                <p>UX, UI, Web, Mobile, Apps</p>
                 <p className="list-title has-text-primary has-text-weight-normal">
-                  Design Tools:
+                  Strumenti che utilizzo:
                 </p>
                 <ul>
-                  <li>Balsamiq Mockups</li>
                   <li>Figma</li>
-                  <li>Invision</li>
-                  <li>Marvel</li>
-                  <li>Pen &amp; Paper</li>
+                  <li>Canva</li>
                   <li>Sketch</li>
-                  <li>Webflow</li>
-                  <li>Zeplin</li>
                 </ul>
               </div>
             </div>

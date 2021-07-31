@@ -21,7 +21,7 @@ const Section = styled.section`
 
     @media screen and (max-width: 1024px) {
       border-radius: 0;
-      height: 10%;
+      height: 15%;
     }
   }
   .section-title {
@@ -36,20 +36,28 @@ const RecetWork = () => {
   return (
     <Section id="recent">
       <div className="section-title">
-        <h2 className="title is-2 has-text-centered">Lavori Recenti</h2>
+        <h2 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered">
+          Lavori Recenti
+        </h2>
         <h5 className="subtitle is-5 has-text-centered">
           Ecco alcuni progetti su cui ho lavorato recentemente
         </h5>
       </div>
       <Grid>
-        <Card sizeClass="is-5by3" url={process.env.PUBLIC_URL + "/ad.jpg"} />
         <Card
-          sizeClass="is-5by3"
-          url={process.env.PUBLIC_URL + "/wisepress.jpg"}
+          description="Frontend realizzato con react, backend con django rest framework e restAPI."
+          link="https://astrologiadavvero.netlify.app/"
+          url={process.env.PUBLIC_URL + "/img/astrologiaDavvero.jpeg"}
         />
         <Card
-          sizeClass="is-5by3"
-          url={process.env.PUBLIC_URL + "/kerykeion.jpg"}
+          description="Tema di newspaper wordpress scritto da zero principalmente con l'utilizzo di SASS e PHP"
+          link="http://centuryboy.altervista.org/wordpress/"
+          url={process.env.PUBLIC_URL + "/img/wisepress.jpg"}
+        />
+        <Card
+          description="Libreria di calcoli astrologici open source realizzato per astrologiadavvero.it"
+          link="https://github.com/g-battaglia/kerykeion/"
+          url={process.env.PUBLIC_URL + "/img/kerykeion.jpg"}
         />
       </Grid>
     </Section>

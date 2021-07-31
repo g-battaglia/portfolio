@@ -34,7 +34,9 @@ const Hero = () => {
   return (
     <Section id="hero">
       <div className="heroTitle">
-        <h2 className="title is-2 has-text-centered">Giacomo Battaglia</h2>
+        <h2 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered">
+          Giacomo Battaglia
+        </h2>
         <h5 className="subtitle is-5 has-text-centered">
           Sviluppatore principalmente self-taught altamente motivato in cerca di
           occupazione nella realizzazione di applicazioni e servizi web.
@@ -43,12 +45,12 @@ const Hero = () => {
 
       <img
         className="avatar box"
-        src={process.env.PUBLIC_URL + "/avatar.jpeg"}
+        src={process.env.PUBLIC_URL + "/img/avatar.jpeg"}
         alt=""
       />
       <img
         className="heroSvg my-6"
-        src={process.env.PUBLIC_URL + "/hero.svg"}
+        src={process.env.PUBLIC_URL + "/img/hero.svg"}
         alt=""
       />
     </Section>
