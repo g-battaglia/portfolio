@@ -17,8 +17,7 @@ const Cookies = () => {
         borderRadius: "4px",
       }}
     >
-      Questo sito utilizza cookie tecnici. Nessun dato dell'utente viene
-      raccolto.
+      Questo sito utilizza cookie tecnici.
     </CookieConsent>
   );
 };

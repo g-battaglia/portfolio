@@ -87,32 +87,6 @@ const Skils = () => {
           <div className="content">
             <div className="columns is-centered">
               <div className="column first">
-                <i className="fas fa-server has-text-primary"></i>
-                <h1 className="title is-size-4 is-spaced">Back-end</h1>
-                <p className="title-description">
-                  Nel backend do il mio meglio per realizzare strutture solide
-                  da collegare al frontend.
-                </p>
-                <p className="list-title has-text-primary has-text-weight-normal">
-                  Linguaggi:
-                </p>
-                <p>Python, PHP, Javascript, SQL, Bash</p>
-                <p className="list-title has-text-primary has-text-weight-normal">
-                  Framework e tecnologie
-                </p>
-                <ul>
-                  <li>Django</li>
-                  <li>Django Rest Framework</li>
-                  <li>FastAPI</li>
-                  <li>Flask</li>
-                  <li>Node.js</li>
-                  <li>Bash/Zsh scripting</li>
-                  <li>Linux</li>
-                  <li>Aws</li>
-                  <li>Firebase</li>
-                </ul>
-              </div>
-              <div className="column ">
                 <i className="fas fa-desktop has-text-primary"></i>
                 <h1 className="title is-size-4 is-spaced">Front-end</h1>
                 <p className="title-description">
@@ -137,6 +111,32 @@ const Skils = () => {
                   <li>Bulma</li>
                   <li>Tailwind</li>
                   <li>Codepen</li>
+                </ul>
+              </div>
+              <div className="column ">
+                <i className="fas fa-server has-text-primary"></i>
+                <h1 className="title is-size-4 is-spaced">Back-end</h1>
+                <p className="title-description">
+                  Nel backend do il mio meglio per realizzare strutture solide
+                  da collegare al frontend.
+                </p>
+                <p className="list-title has-text-primary has-text-weight-normal">
+                  Linguaggi:
+                </p>
+                <p>Python, PHP, Javascript, SQL, Bash</p>
+                <p className="list-title has-text-primary has-text-weight-normal">
+                  Framework e tecnologie
+                </p>
+                <ul>
+                  <li>Django</li>
+                  <li>Django Rest Framework</li>
+                  <li>FastAPI</li>
+                  <li>Flask</li>
+                  <li>Node.js</li>
+                  <li>Bash/Zsh scripting</li>
+                  <li>Linux</li>
+                  <li>Aws</li>
+                  <li>Firebase</li>
                 </ul>
               </div>
               <div className="column">

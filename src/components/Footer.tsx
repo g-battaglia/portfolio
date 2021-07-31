@@ -38,7 +38,7 @@ const Footer: React.FC<Props> = ({ setPrivacy }) => {
     <Styles>
       <div className="inner container">
         <a href="#hero">
-          <h2 className="logo footerText button is-primary">BT-Dev</h2>
+          <h2 className="logo footerText button is-primary">&copy; BT-Dev </h2>
         </a>
         <SocialFooter />
         <h2 className=" footerText button is-primary" onClick={clickHandler}>

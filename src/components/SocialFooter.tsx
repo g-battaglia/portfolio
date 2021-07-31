@@ -1,25 +1,30 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Div = styled.div`
   display: flex;
-  color: white;
 
-  i {
+  .icon {
     font-size: 1.55rem;
+    color: white;
+    padding: 0.2rem;
   }
 `;
 
 const SocialFooter = () => {
   return (
     <Div className="social">
-      <a href="https://www.instagram.com/bt.coding/">
-        <i className="fab fa-instagram button is-primary"></i>
+      <a
+        href="https://www.instagram.com/bt.coding/"
+        className="button is-primary"
+      >
+        <FontAwesomeIcon className="icon" icon={["fab", "instagram"]} />
       </a>
-      <a href="https://www.linkedin.com/feed/">
-        <i className="fab fa-linkedin button is-primary"></i>
+      <a href="https://www.linkedin.com/feed/" className="button is-primary">
+        <FontAwesomeIcon className="icon" icon={["fab", "linkedin"]} />
       </a>
-      <a href="https://github.com/g-battaglia">
-        <i className="fab fa-github button is-primary"></i>
+      <a href="https://github.com/g-battaglia" className="button is-primary">
+        <FontAwesomeIcon className="icon" icon={["fab", "github"]} />
       </a>
     </Div>
   );

@@ -19,8 +19,8 @@ const Div = styled.div`
     border-radius: 8px;
     padding: 4rem;
     position: fixed;
-    height: 50vh;
-    width: 50vw;
+    height: 70vh;
+    width: 70vw;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -28,8 +28,9 @@ const Div = styled.div`
     z-index: 1000001;
     background-color: #fff;
     text-align: justify;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       width: 90%;
+      padding: 4rem 1rem;
     }
   }
 `;

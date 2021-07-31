@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 const Nav = styled.nav`
@@ -19,6 +20,10 @@ const Nav = styled.nav`
     align-items: center;
     justify-content: center;
     box-shadow: none;
+  }
+
+  .navbar-burger {
+    font-size: 1.25rem;
   }
 
   .button {
@@ -58,9 +63,7 @@ const Navbar = () => {
             data-target="navbarBasicExample"
             onClick={() => setShowOverlay((prev) => !prev)}
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <FontAwesomeIcon icon="bars" />
           </button>
         </div>
 
