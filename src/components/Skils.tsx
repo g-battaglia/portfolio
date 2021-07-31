@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Section = styled.section`
   padding: 0;
@@ -23,9 +24,10 @@ const Section = styled.section`
   .box {
     padding-bottom: 3rem;
   }
-  i {
+  i,
+  .column-icon {
     font-size: 3rem;
-    padding: 2rem;
+    margin: 2rem;
   }
 
   .title-description {
@@ -87,7 +89,10 @@ const Skils = () => {
           <div className="content">
             <div className="columns is-centered">
               <div className="column first">
-                <i className="fas fa-desktop has-text-primary"></i>
+                <FontAwesomeIcon
+                  className="column-icon has-text-primary"
+                  icon="desktop"
+                />
                 <h1 className="title is-size-4 is-spaced">Front-end</h1>
                 <p className="title-description">
                   Il frontend è la mia specialità. La tecnologia che padroneggio
@@ -114,7 +119,11 @@ const Skils = () => {
                 </ul>
               </div>
               <div className="column ">
-                <i className="fas fa-server has-text-primary"></i>
+                <FontAwesomeIcon
+                  className="column-icon has-text-primary"
+                  icon="server"
+                />
+
                 <h1 className="title is-size-4 is-spaced">Back-end</h1>
                 <p className="title-description">
                   Nel backend do il mio meglio per realizzare strutture solide
@@ -140,7 +149,10 @@ const Skils = () => {
                 </ul>
               </div>
               <div className="column">
-                <i className="fas fa-pencil-ruler has-text-primary"></i>
+                <FontAwesomeIcon
+                  className="column-icon has-text-primary"
+                  icon="pencil-ruler"
+                />
                 <h1 className="title is-size-4 is-spaced">Design</h1>
                 <p className="title-description">
                   Realizzo anche design semplici e puliti che aiutino l'utente

@@ -15,6 +15,7 @@ const Nav = styled.nav`
   .navbar-brand {
     display: flex;
     align-items: center;
+    margin-right: 1rem;
   }
   .navbar-menu {
     align-items: center;
@@ -28,7 +29,7 @@ const Nav = styled.nav`
 
   .button {
     position: absolute;
-    right: 2rem;
+    right: 3rem;
   }
   @media screen and (max-width: 1024px) {
     .button {

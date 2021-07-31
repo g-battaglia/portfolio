@@ -1,7 +1,12 @@
 import { useState } from "react";
 
 // Font awsome:
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faDesktop,
+  faPencilRuler,
+  faServer,
+} from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faGithub,
@@ -23,7 +28,15 @@ import {
 import "bulma/css/bulma.min.css";
 import "./App.css";
 
-library.add(faBars, faInstagram, faGithub, faLinkedin);
+library.add(
+  faBars,
+  faInstagram,
+  faGithub,
+  faLinkedin,
+  faDesktop,
+  faPencilRuler,
+  faServer
+);
 
 function App() {
   const [privacy, setPrivacy] = useState(false);
