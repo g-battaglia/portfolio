@@ -123,7 +123,7 @@ const Skils = () => {
                 <p className="list-title has-text-primary has-text-weight-normal">
                   Linguaggi:
                 </p>
-                <p>Javascript, PHP, SASS, HTML, CSS</p>
+                <p>Javascript, Typescript, PHP, SASS, HTML, CSS</p>
                 <p className="list-title has-text-primary has-text-weight-normal">
                   Frakework e tecnlogie:
                 </p>

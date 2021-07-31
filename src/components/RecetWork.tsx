@@ -45,7 +45,7 @@ const RecetWork = () => {
       </div>
       <Grid>
         <Card
-          description="Frontend realizzato con react, backend con django rest framework e restAPI."
+          description="Frontend realizzato con React+Typescript, backend con django rest framework e restAPI."
           link="https://astrologiadavvero.netlify.app/"
           url={process.env.PUBLIC_URL + "/img/astrologiaDavvero.jpeg"}
         />
@@ -55,7 +55,7 @@ const RecetWork = () => {
           url={process.env.PUBLIC_URL + "/img/wisepress.jpg"}
         />
         <Card
-          description="Libreria di calcoli astrologici open source realizzato per astrologiadavvero.it"
+          description="Libreria di calcoli e grafici astrologici open source realizzato con Python per astrologiadavvero.it"
           link="https://github.com/g-battaglia/kerykeion/"
           url={process.env.PUBLIC_URL + "/img/kerykeion.jpg"}
         />
