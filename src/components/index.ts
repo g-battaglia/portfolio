@@ -10,7 +10,8 @@ import Skils from "./Skils";
 import SocialFooter from "./SocialFooter";
 import Footer from "./Footer";
 // Cookies:
-import Cookies from "../Cookies";
+import Cookies from "./Cookies";
+import Privacy from "./Privacy";
 
 export {
   Navbar,
@@ -23,4 +24,5 @@ export {
   Grid,
   SocialFooter,
   Cookies,
+  Privacy,
 };

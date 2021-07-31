@@ -3,13 +3,15 @@ import { Grid, Card } from ".";
 
 const BioSection = styled.section`
   margin-top: 6rem;
-  padding-top: 4rem;
   position: relative;
   border-radius: 16px;
   padding: 2rem;
   margin-left: -2rem;
   margin-right: -2rem;
   padding-bottom: 4rem;
+  .bioTitle {
+    padding: 2rem 0;
+  }
   @media screen and (max-width: 1024px) {
     box-shadow: none;
   } ;
@@ -17,7 +19,7 @@ const BioSection = styled.section`
 
 const Certicates = () => {
   return (
-    <BioSection className="box" id="bio">
+    <BioSection className="box" id="certificates">
       <div className="bioTitle">
         <h2 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered">
           Certificazioni

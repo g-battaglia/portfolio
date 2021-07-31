@@ -25,13 +25,25 @@ const Styles = styled.footer`
     font-size: 1.25rem;
   }
 `;
-const Footer = () => {
+
+type Props = {
+  setPrivacy: Function;
+};
+
+const Footer: React.FC<Props> = ({ setPrivacy }) => {
+  function clickHandler() {
+    setPrivacy(true);
+  }
   return (
     <Styles>
       <div className="inner container">
-        <h2 className="logo footerText button is-primary">BT-Dev</h2>
+        <a href="#hero">
+          <h2 className="logo footerText button is-primary">BT-Dev</h2>
+        </a>
         <SocialFooter />
-        <h2 className=" footerText button is-primary">Privacy Policy</h2>
+        <h2 className=" footerText button is-primary" onClick={clickHandler}>
+          Privacy Policy
+        </h2>
       </div>
     </Styles>
   );

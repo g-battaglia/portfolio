@@ -33,3 +33,7 @@ body {
 .dark {
   background-color: #303030;
 }
+
+.hide {
+  display: none;
+}

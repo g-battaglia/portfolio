@@ -78,11 +78,11 @@ const Navbar = () => {
             </a>
 
             <a
-              href="#bio"
+              href="#certificates"
               onClick={() => setShowOverlay((prev) => !prev)}
               className="navbar-item"
             >
-              Biografia
+              Certificazioni
             </a>
             <a
               href="#recent"

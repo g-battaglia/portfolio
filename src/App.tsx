@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   Navbar,
   Hero,
@@ -6,11 +8,13 @@ import {
   Footer,
   Certicates,
   Cookies,
+  Privacy,
 } from "./components";
 import "bulma/css/bulma.min.css";
 import "./App.css";
 
 function App() {
+  const [privacy, setPrivacy] = useState(false);
   return (
     <>
       <Navbar />
@@ -23,8 +27,9 @@ function App() {
         <RecetWork />
         <Certicates />
       </main>
-      <Footer />
+      <Footer setPrivacy={setPrivacy} />
       <Cookies />
+      <Privacy privacy={privacy} setPrivacy={setPrivacy} />
     </>
   );
 }
