@@ -31,10 +31,7 @@ const Section = styled.section`
   .title-description {
     height: 8rem;
     @media screen and (max-width: 1024px) {
-      height: 11rem;
-    }
-    @media screen and (max-width: 768px) {
-      height: 5rem;
+      height: 9rem;
     }
   }
   .columns {
