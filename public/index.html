@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,6 +38,20 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HQRMXLV97R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HQRMXLV97R");
+    </script>
     <title>Giacomo Battaglia | Web Developer</title>
   </head>
   <body>
