@@ -55,6 +55,11 @@ const Certicates = () => {
           description="Corso sull'utilizzo di jQuery"
           link="https://onemonth.com/certificates/FWtXZ4vmV2fYTjZ4KAsr"
         />
+        <Card
+          url={process.env.PUBLIC_URL + "/img/python.jpeg"}
+          description="Specializzazione generale di programmazione in Python"
+          link="https://www.coursera.org/account/accomplishments/specialization/certificate/QXGQKZZGQL3N"
+        />
       </Grid>
     </BioSection>
   );
