@@ -3,7 +3,7 @@ import CookieConsent from "react-cookie-consent";
 const Cookies = () => {
   return (
     <CookieConsent
-      buttonText="Va bane, grazie!"
+      buttonText="Va bene, grazie!"
       style={{
         background: "#fff",
         borderTop: "1px solid #e4e4e4",
