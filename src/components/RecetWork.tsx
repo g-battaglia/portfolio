@@ -12,7 +12,7 @@ const Section = styled.section`
   &::before {
     content: "";
     background-color: #00d1b2;
-    height: 300px;
+    height: 500px;
     width: 100%;
     position: absolute;
     left: 0;
@@ -49,6 +49,13 @@ const RecetWork = () => {
           link="https://astrologiadavvero.netlify.app/"
           url={process.env.PUBLIC_URL + "/img/astrologiaDavvero.jpeg"}
         />
+
+        <Card
+          description="Landing page example realizzata con React+Typescript."
+          link="https://bt-plg-test.netlify.app/"
+          url={process.env.PUBLIC_URL + "/img/playground.jpeg"}
+        />
+
         <Card
           description="Tema di newspaper wordpress scritto da zero principalmente con l'utilizzo di SASS e PHP"
           link="http://centuryboy.altervista.org/wordpress/"
