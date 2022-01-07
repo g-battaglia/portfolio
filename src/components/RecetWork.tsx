@@ -46,7 +46,7 @@ const RecetWork = () => {
       <Grid>
         <Card
           description="Frontend realizzato con React+Typescript, backend con django rest framework e restAPI."
-          link="https://astrologiadavvero.netlify.app/"
+          link="https://astrologiadavvero.it/"
           url={process.env.PUBLIC_URL + "/img/astrologiaDavvero.jpeg"}
         />
 
