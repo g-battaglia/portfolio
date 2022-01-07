@@ -1,6 +1,7 @@
 import { useState } from "react";
+import "./i18n";
 
-// Font awsome:
+// Font awesome:
 import {
   faBars,
   faDesktop,

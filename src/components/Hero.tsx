@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
+
 const Section = styled.section`
   display: flex;
   justify-content: center;
@@ -31,16 +33,15 @@ const Section = styled.section`
 `;
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <Section id="hero">
       <div className="heroTitle">
         <h2 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-centered">
           Giacomo Battaglia
         </h2>
-        <h5 className="subtitle is-5 has-text-centered">
-          Sviluppatore principalmente self-taught altamente motivato in cerca di
-          occupazione nella realizzazione di applicazioni e servizi web.
-        </h5>
+        <h5 className="subtitle is-5 has-text-centered">{t("Hero text")}</h5>
       </div>
 
       <img
